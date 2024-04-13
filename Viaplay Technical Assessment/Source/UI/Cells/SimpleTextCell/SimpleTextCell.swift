@@ -10,13 +10,12 @@ import UIKit
 final class SimpleTextCell: UICollectionViewCell {
     static let ID = "SimpleTextCell"
     
-    @IBOutlet weak var nameButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var viewModel: SimpleTextCellViewModel? {
         didSet {
             guard let viewModel else { return }
-            
-            nameButton.setTitle(viewModel.name ?? "N/A", for: .normal)
+            nameLabel.text = viewModel.name ?? "N/A"
         }
     }
     
@@ -27,15 +26,15 @@ final class SimpleTextCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        nameButton.titleLabel?.text = nil
+        nameLabel.text = nil
     }
     
     private func configureUI() {
-        nameButton.setTitle(nil, for: .normal)
-        nameButton.setTitleColor(.white, for: .normal)
-        nameButton.titleLabel?.font = .boldSystemFont(ofSize: 17.0)
-        nameButton.titleLabel?.textAlignment = .center
-        nameButton.titleLabel?.lineBreakMode = .byTruncatingTail
-        nameButton.titleLabel?.numberOfLines = 1
+        nameLabel.text = nil
+        nameLabel.font = .systemFont(ofSize: 17.0)
+        nameLabel.textColor = .black
+        nameLabel.textAlignment = .left
+        nameLabel.lineBreakMode = .byTruncatingTail
+        nameLabel.numberOfLines = 1
     }
 }

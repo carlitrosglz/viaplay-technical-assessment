@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol AppViewFactoryProtocol {
+protocol AppViewFactoryProtocol: AnyObject {
     func createMainViewController(router: AppRouterProtocol?) -> UIViewController
     func createSectionListViewController(router: AppRouterProtocol?) -> SectionListViewController
-    func createSectionDetailViewController() -> UIViewController
+    func createSectionDetailViewController(with uri: URL?) -> SectionDetailViewController
 }

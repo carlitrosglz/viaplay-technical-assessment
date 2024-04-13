@@ -16,23 +16,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="296" height="143"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrR-ib-MXV">
-                        <rect key="frame" x="10" y="10" width="276" height="123"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Section name"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Section name"/>
-                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptx-P8-pij">
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="143"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LrR-ib-MXV" firstAttribute="leading" secondItem="RfC-AO-TQD" secondAttribute="leading" constant="10" id="Uyg-NL-NzS"/>
-                    <constraint firstAttribute="trailing" secondItem="LrR-ib-MXV" secondAttribute="trailing" constant="10" id="hje-rG-ick"/>
-                    <constraint firstItem="LrR-ib-MXV" firstAttribute="top" secondItem="RfC-AO-TQD" secondAttribute="top" constant="10" id="oh9-Qb-HeM"/>
-                    <constraint firstAttribute="bottom" secondItem="LrR-ib-MXV" secondAttribute="bottom" constant="10" id="pys-Kf-Fig"/>
+                    <constraint firstItem="Ptx-P8-pij" firstAttribute="centerY" secondItem="RfC-AO-TQD" secondAttribute="centerY" id="AGi-7i-M5B"/>
+                    <constraint firstAttribute="bottom" secondItem="Ptx-P8-pij" secondAttribute="bottom" id="auI-5x-LMF"/>
+                    <constraint firstItem="Ptx-P8-pij" firstAttribute="top" secondItem="RfC-AO-TQD" secondAttribute="top" id="bF9-vA-V4Y"/>
+                    <constraint firstItem="Ptx-P8-pij" firstAttribute="leading" secondItem="RfC-AO-TQD" secondAttribute="leading" id="dL2-pd-8cP"/>
+                    <constraint firstAttribute="trailing" secondItem="Ptx-P8-pij" secondAttribute="trailing" id="nL2-C0-U79"/>
+                    <constraint firstItem="Ptx-P8-pij" firstAttribute="centerX" secondItem="RfC-AO-TQD" secondAttribute="centerX" id="ujX-GD-XRy"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="296" height="143"/>
             <connections>
-                <outlet property="nameButton" destination="LrR-ib-MXV" id="nzc-p2-WEU"/>
+                <outlet property="nameLabel" destination="Ptx-P8-pij" id="5a9-SU-KWm"/>
             </connections>
             <point key="canvasLocation" x="259.5419847328244" y="10.211267605633804"/>
         </collectionViewCell>

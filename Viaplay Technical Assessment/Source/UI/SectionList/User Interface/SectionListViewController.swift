@@ -34,7 +34,7 @@ final class SectionListViewController: UIViewController {
         collectionView.register(UICollectionViewCell.self,forCellWithReuseIdentifier: String(describing:UICollectionViewCell.self))
         
         titleLabel.text = "Viaplay Section List"
-        titleLabel.textColor = .white
+        titleLabel.textColor = .black
         titleLabel.font = .boldSystemFont(ofSize: 30.0)
     }
     
@@ -66,6 +66,6 @@ extension SectionListViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // navigate
+        router?.showSectionDetail(navigationController: self.navigationController, with: viewModel?[indexPath.row].uri)
     }
 }

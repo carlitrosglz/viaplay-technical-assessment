@@ -9,6 +9,7 @@ import UIKit
 
 final class AppViewFactory: AppViewFactoryProtocol {
     private let SECTION_LIST = "SectionListView"
+    private let SECTION_DETAIL = "SectionDetail"
     
     private func createViewController<T>(controller: T.Type, storyboardId: String) -> T where T: UIViewController {
         let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle(for: T.self))
@@ -17,7 +18,10 @@ final class AppViewFactory: AppViewFactoryProtocol {
     }
     
     func createMainViewController(router: AppRouterProtocol?) -> UIViewController {
-        return createSectionListViewController(router: router)
+        let root = createSectionListViewController(router: router)
+        let nav = UINavigationController(rootViewController: root)
+        return nav
+        //return createSectionListViewController(router: router)
     }
     
     func createSectionListViewController(router: AppRouterProtocol?) -> SectionListViewController {
@@ -29,7 +33,12 @@ final class AppViewFactory: AppViewFactoryProtocol {
         return vc
     }
     
-    func createSectionDetailViewController() -> UIViewController {
-        return UIViewController()
+    func createSectionDetailViewController(with uri: URL?) -> SectionDetailViewController {
+        let vc = createViewController(controller: SectionDetailViewController.self, storyboardId: SECTION_DETAIL)
+        vc.interactor = SectionDetailInteractor(
+            presenter: SectionDetailPresenter(view: vc)
+        )
+        vc.uri = uri
+        return vc
     }
 }

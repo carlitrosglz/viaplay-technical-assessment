@@ -31,6 +31,16 @@
 		251F3F182BCA97D50048D70E /* RootPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F172BCA97D50048D70E /* RootPageDTO.swift */; };
 		251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */; };
 		251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */; };
+		251F3F1E2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */; };
+		251F3F202BCAA8800048D70E /* ViaplaySectionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */; };
+		251F3F252BCAAD0F0048D70E /* SectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */; };
+		251F3F272BCAAD360048D70E /* SectionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251F3F262BCAAD360048D70E /* SectionDetail.storyboard */; };
+		251F3F292BCAAE390048D70E /* SectionDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */; };
+		251F3F2B2BCAAEF70048D70E /* SectionDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */; };
+		251F3F2D2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */; };
+		251F3F2F2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */; };
+		251F3F312BCAAF110048D70E /* SectionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */; };
+		25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +72,16 @@
 		251F3F172BCA97D50048D70E /* RootPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageDTO.swift; sourceTree = "<group>"; };
 		251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplayCoreInstance.swift; sourceTree = "<group>"; };
 		251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactoryProtocol.swift; sourceTree = "<group>"; };
+		251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDetailDomain.swift; sourceTree = "<group>"; };
+		251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDetailDTO.swift; sourceTree = "<group>"; };
+		251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewController.swift; sourceTree = "<group>"; };
+		251F3F262BCAAD360048D70E /* SectionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionDetail.storyboard; sourceTree = "<group>"; };
+		251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewProtocol.swift; sourceTree = "<group>"; };
+		251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailInteractor.swift; sourceTree = "<group>"; };
+		251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailPresenter.swift; sourceTree = "<group>"; };
+		25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +147,7 @@
 		251F3EDE2BCA830D0048D70E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				25628D9D2BCAC6BC0006C079 /* Extensions */,
 				251F3EE72BCA84670048D70E /* Core */,
 				251F3EDF2BCA83280048D70E /* UI */,
 			);
@@ -157,6 +178,9 @@
 		251F3EE12BCA83430048D70E /* SectionDetail */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F212BCAACEF0048D70E /* Use Cases */,
+				251F3F222BCAACF70048D70E /* Adapters */,
+				251F3F232BCAACFB0048D70E /* User Interface */,
 			);
 			path = SectionDetail;
 			sourceTree = "<group>";
@@ -220,6 +244,7 @@
 			children = (
 				251F3F172BCA97D50048D70E /* RootPageDTO.swift */,
 				251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */,
+				251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -228,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */,
+				251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -275,6 +301,42 @@
 				251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		251F3F212BCAACEF0048D70E /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */,
+				251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		251F3F222BCAACF70048D70E /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */,
+				251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		251F3F232BCAACFB0048D70E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */,
+				251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */,
+				251F3F262BCAAD360048D70E /* SectionDetail.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		25628D9D2BCAC6BC0006C079 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +400,7 @@
 				251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */,
 				251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */,
 				251F3EFC2BCA88170048D70E /* SimpleTextCell.xib in Resources */,
+				251F3F272BCAAD360048D70E /* SectionDetail.storyboard in Resources */,
 				251F3ED32BCA7F0A0048D70E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,10 +416,14 @@
 				251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */,
 				251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */,
 				251F3F162BCA94480048D70E /* APIConfiguration.swift in Sources */,
+				251F3F2F2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift in Sources */,
 				251F3F082BCA900F0048D70E /* AppRouter.swift in Sources */,
+				251F3F202BCAA8800048D70E /* ViaplaySectionDetailDTO.swift in Sources */,
 				251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */,
+				251F3F292BCAAE390048D70E /* SectionDetailViewProtocol.swift in Sources */,
 				251F3F0E2BCA90840048D70E /* ViaplaySectionDomain.swift in Sources */,
 				251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */,
+				251F3F312BCAAF110048D70E /* SectionDetailPresenter.swift in Sources */,
 				251F3F062BCA8F400048D70E /* SectionListPresenterProtocol.swift in Sources */,
 				251F3F122BCA93340048D70E /* Network.swift in Sources */,
 				251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */,
@@ -364,9 +431,14 @@
 				251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */,
 				251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */,
 				251F3F142BCA93630048D70E /* Endpoint.swift in Sources */,
+				251F3F252BCAAD0F0048D70E /* SectionDetailViewController.swift in Sources */,
 				251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */,
 				251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */,
 				251F3F0A2BCA90220048D70E /* AppRouterProtocol.swift in Sources */,
+				251F3F1E2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift in Sources */,
+				25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */,
+				251F3F2B2BCAAEF70048D70E /* SectionDetailInteractor.swift in Sources */,
+				251F3F2D2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift in Sources */,
 				251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */,
 				251F3F0C2BCA90620048D70E /* AppViewFactory.swift in Sources */,
 			);

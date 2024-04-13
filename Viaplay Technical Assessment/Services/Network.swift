@@ -9,6 +9,19 @@ import Foundation
 
 final class Network {
     static let shared = Network()
+    
+    func callTo<JSON>(url: URL, method: String) async throws -> JSON where JSON: Decodable {
+        do {
+            let (data, _) = try await getData(from: url, httpMethod: method)
+            do {
+                return try JSONDecoder().decode(JSON.self, from: data)
+            } catch {
+                throw fatalError()
+            }
+        } catch {
+            throw fatalError()
+        }
+    }
 
     func callTo<JSON>(endpoint: Endpoint,
                       urlParams: String? = nil) async throws -> JSON where JSON: Decodable {
@@ -25,16 +38,7 @@ final class Network {
             throw fatalError()
         }
         
-        do {
-            let (data, _) = try await getData(from: url, httpMethod: endpoint.method)
-            do {
-                return try JSONDecoder().decode(JSON.self, from: data)
-            } catch {
-                throw fatalError()
-            }
-        } catch {
-            throw fatalError()
-        }
+        return try await callTo(url: url, method: endpoint.method)
     }
 
     private func getData(from url: URL,

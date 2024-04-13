@@ -13,8 +13,8 @@ final class ViaplayCoreInstance {
     private let factory: AppViewFactoryProtocol?
     
     init() {
-        router = AppRouter()
         factory = AppViewFactory()
+        router = AppRouter(factory: factory)
     }
     
     func start(in window: UIWindow?) {
