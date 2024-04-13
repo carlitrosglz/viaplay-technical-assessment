@@ -12,6 +12,25 @@
 		251F3ED32BCA7F0A0048D70E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ED22BCA7F0A0048D70E /* Base */; };
 		251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */; };
 		251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251F3EF12BCA85310048D70E /* SectionListView.storyboard */; };
+		251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */; };
+		251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */; };
+		251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */; };
+		251F3EFC2BCA88170048D70E /* SimpleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */; };
+		251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */; };
+		251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */; };
+		251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F032BCA8F370048D70E /* SectionListPresenter.swift */; };
+		251F3F062BCA8F400048D70E /* SectionListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */; };
+		251F3F082BCA900F0048D70E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F072BCA900F0048D70E /* AppRouter.swift */; };
+		251F3F0A2BCA90220048D70E /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F092BCA90220048D70E /* AppRouterProtocol.swift */; };
+		251F3F0C2BCA90620048D70E /* AppViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0B2BCA90620048D70E /* AppViewFactory.swift */; };
+		251F3F0E2BCA90840048D70E /* ViaplaySectionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */; };
+		251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */; };
+		251F3F122BCA93340048D70E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F112BCA93340048D70E /* Network.swift */; };
+		251F3F142BCA93630048D70E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F132BCA93630048D70E /* Endpoint.swift */; };
+		251F3F162BCA94480048D70E /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F152BCA94480048D70E /* APIConfiguration.swift */; };
+		251F3F182BCA97D50048D70E /* RootPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F172BCA97D50048D70E /* RootPageDTO.swift */; };
+		251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */; };
+		251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,25 @@
 		251F3EED2BCA84D90048D70E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		251F3EEF2BCA84DF0048D70E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		251F3EF12BCA85310048D70E /* SectionListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionListView.storyboard; sourceTree = "<group>"; };
+		251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractorProtocol.swift; sourceTree = "<group>"; };
+		251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractor.swift; sourceTree = "<group>"; };
+		251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCell.swift; sourceTree = "<group>"; };
+		251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTextCell.xib; sourceTree = "<group>"; };
+		251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCellViewModel.swift; sourceTree = "<group>"; };
+		251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewProtocol.swift; sourceTree = "<group>"; };
+		251F3F032BCA8F370048D70E /* SectionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListPresenter.swift; sourceTree = "<group>"; };
+		251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListPresenterProtocol.swift; sourceTree = "<group>"; };
+		251F3F072BCA900F0048D70E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		251F3F092BCA90220048D70E /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		251F3F0B2BCA90620048D70E /* AppViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactory.swift; sourceTree = "<group>"; };
+		251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDomain.swift; sourceTree = "<group>"; };
+		251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDTO.swift; sourceTree = "<group>"; };
+		251F3F112BCA93340048D70E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		251F3F132BCA93630048D70E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		251F3F152BCA94480048D70E /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		251F3F172BCA97D50048D70E /* RootPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageDTO.swift; sourceTree = "<group>"; };
+		251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplayCoreInstance.swift; sourceTree = "<group>"; };
+		251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +97,10 @@
 			children = (
 				251F3EDE2BCA830D0048D70E /* Source */,
 				251F3EDD2BCA83060048D70E /* Entities */,
+				251F3F002BCA8DE00048D70E /* Factories */,
 				251F3EDC2BCA82FB0048D70E /* Services */,
+				251F3EFF2BCA8DC90048D70E /* Routing */,
 				251F3EE62BCA84060048D70E /* Static Resources */,
-				251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */,
 			);
 			path = "Viaplay Technical Assessment";
 			sourceTree = "<group>";
@@ -69,6 +108,9 @@
 		251F3EDC2BCA82FB0048D70E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F112BCA93340048D70E /* Network.swift */,
+				251F3F132BCA93630048D70E /* Endpoint.swift */,
+				251F3F152BCA94480048D70E /* APIConfiguration.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -94,6 +136,7 @@
 		251F3EDF2BCA83280048D70E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				251F3EF72BCA87BF0048D70E /* Cells */,
 				251F3EE22BCA83780048D70E /* SplashScreen */,
 				251F3EE02BCA83300048D70E /* SectionList */,
 				251F3EE12BCA83430048D70E /* SectionDetail */,
@@ -129,6 +172,7 @@
 		251F3EE32BCA839B0048D70E /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */,
 				251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */,
 				251F3EF12BCA85310048D70E /* SectionListView.storyboard */,
 			);
@@ -138,6 +182,8 @@
 		251F3EE42BCA83EA0048D70E /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */,
+				251F3F032BCA8F370048D70E /* SectionListPresenter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -145,6 +191,8 @@
 		251F3EE52BCA83F50048D70E /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */,
+				251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -153,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */,
+				251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */,
 			);
 			path = "Static Resources";
 			sourceTree = "<group>";
@@ -161,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				251F3EC62BCA7F090048D70E /* AppDelegate.swift */,
+				251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -168,6 +218,8 @@
 		251F3EE82BCA84710048D70E /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F172BCA97D50048D70E /* RootPageDTO.swift */,
+				251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -175,6 +227,7 @@
 		251F3EE92BCA84760048D70E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -186,6 +239,42 @@
 				251F3EED2BCA84D90048D70E /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		251F3EF72BCA87BF0048D70E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EF82BCA87C70048D70E /* SimpleTextCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		251F3EF82BCA87C70048D70E /* SimpleTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */,
+				251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */,
+				251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */,
+			);
+			path = SimpleTextCell;
+			sourceTree = "<group>";
+		};
+		251F3EFF2BCA8DC90048D70E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F092BCA90220048D70E /* AppRouterProtocol.swift */,
+				251F3F072BCA900F0048D70E /* AppRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		251F3F002BCA8DE00048D70E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F0B2BCA90620048D70E /* AppViewFactory.swift */,
+				251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +337,7 @@
 			files = (
 				251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */,
 				251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */,
+				251F3EFC2BCA88170048D70E /* SimpleTextCell.xib in Resources */,
 				251F3ED32BCA7F0A0048D70E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +349,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251F3F182BCA97D50048D70E /* RootPageDTO.swift in Sources */,
+				251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */,
+				251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */,
+				251F3F162BCA94480048D70E /* APIConfiguration.swift in Sources */,
+				251F3F082BCA900F0048D70E /* AppRouter.swift in Sources */,
+				251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */,
+				251F3F0E2BCA90840048D70E /* ViaplaySectionDomain.swift in Sources */,
+				251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */,
+				251F3F062BCA8F400048D70E /* SectionListPresenterProtocol.swift in Sources */,
+				251F3F122BCA93340048D70E /* Network.swift in Sources */,
 				251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */,
+				251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */,
 				251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */,
+				251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */,
+				251F3F142BCA93630048D70E /* Endpoint.swift in Sources */,
+				251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */,
+				251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */,
+				251F3F0A2BCA90220048D70E /* AppRouterProtocol.swift in Sources */,
+				251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */,
+				251F3F0C2BCA90620048D70E /* AppViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Viaplay-Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Static Resources/Viaplay-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
@@ -436,7 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Viaplay-Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Static Resources/Viaplay-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
