@@ -6,5 +6,6 @@
 //
 
 struct SimpleTextCellViewModel {
+    let id: String?
     let name: String?
 }

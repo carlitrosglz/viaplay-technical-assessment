@@ -17,6 +17,6 @@ struct ViaplaySectionDTO: Decodable {
     let templated: Bool?
     
     func toDomain() -> ViaplaySectionDomain {
-        return ViaplaySectionDomain(name: title, uri: href?.transformToURL())
+        return ViaplaySectionDomain(id: id, name: title, uri: href?.transformToURL())
     }
 }

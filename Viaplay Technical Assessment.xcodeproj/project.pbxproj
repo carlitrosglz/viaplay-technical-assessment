@@ -42,6 +42,8 @@
 		25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */; };
 		25628DA32BCAD0820006C079 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA22BCAD0820006C079 /* NetworkError.swift */; };
 		25628DA52BCAD1CC0006C079 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA42BCAD1CC0006C079 /* HttpMethod.swift */; };
+		25628DA72BCADC080006C079 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA62BCADC080006C079 /* UIImage+Extension.swift */; };
+		25628DA92BCADCB80006C079 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		25628DA22BCAD0820006C079 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		25628DA42BCAD1CC0006C079 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		25628DA62BCADC080006C079 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */,
+				25628DA62BCADC080006C079 /* UIImage+Extension.swift */,
+				25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 				251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */,
 				251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */,
 				251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */,
+				25628DA92BCADCB80006C079 /* UIColor+Extensions.swift in Sources */,
 				251F3F142BCA93630048D70E /* Endpoint.swift in Sources */,
 				251F3F252BCAAD0F0048D70E /* SectionDetailViewController.swift in Sources */,
 				251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */,
@@ -457,6 +464,7 @@
 				251F3F1E2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift in Sources */,
 				25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */,
 				251F3F2B2BCAAEF70048D70E /* SectionDetailInteractor.swift in Sources */,
+				25628DA72BCADC080006C079 /* UIImage+Extension.swift in Sources */,
 				251F3F2D2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift in Sources */,
 				251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */,
 				25628DA52BCAD1CC0006C079 /* HttpMethod.swift in Sources */,

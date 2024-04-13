@@ -8,6 +8,7 @@
 import UIKit
 
 final class SectionDetailViewController: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
     var interactor: SectionDetailInteractorProtocol?
@@ -17,7 +18,7 @@ final class SectionDetailViewController: UIViewController {
             guard let viewModel else { return }
             DispatchQueue.main.async {
                 if let title = viewModel.title {
-                    self.navigationItem.title = title
+                    self.titleLabel.text = title
                 }
                 self.descriptionTextView.text = viewModel.description ?? ""
             }
@@ -31,8 +32,15 @@ final class SectionDetailViewController: UIViewController {
     }
     
     private func configureUI() {
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.tintColor = .white
+        view.backgroundColor = UIColor(hexString: "#1D1D27")
+
+        titleLabel.font = .boldSystemFont(ofSize: 20.0)
+        titleLabel.textColor = .white
+        titleLabel.text = nil
         descriptionTextView.text = nil
-        descriptionTextView.textColor = .black
+        descriptionTextView.textColor = .white
     }
     
     private func getData() {

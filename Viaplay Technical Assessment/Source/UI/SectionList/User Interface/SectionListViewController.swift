@@ -30,12 +30,14 @@ final class SectionListViewController: UIViewController {
     }
     
     private func configureUI() {
+        view.backgroundColor = UIColor(hexString: "#1D1D27")
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UICollectionViewCell.self,forCellWithReuseIdentifier: String(describing:UICollectionViewCell.self))
         
         titleLabel.text = "Viaplay Section List"
-        titleLabel.textColor = .black
+        titleLabel.textColor = .white
         titleLabel.font = .boldSystemFont(ofSize: 30.0)
     }
     
@@ -62,7 +64,8 @@ extension SectionListViewController: UICollectionViewDelegate, UICollectionViewD
             return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing:UICollectionViewCell.self), for: indexPath)
         }
         
-        cell.viewModel = SimpleTextCellViewModel(name: viewModel[indexPath.row].name)
+        cell.delegate = self
+        cell.viewModel = SimpleTextCellViewModel(id: viewModel[indexPath.row].id, name: viewModel[indexPath.row].name)
         return cell
     }
     
@@ -87,5 +90,13 @@ extension SectionListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (collectionView.frame.width - 30 ) / 2        
         return CGSize(width: cellWidth , height: 40)
+    }
+}
+
+extension SectionListViewController: SimpleTextCellProtocol {
+    func onButtonPressed(id: String?) {
+        if let viewModel = viewModel?.first(where: { $0.id == id }) {
+            router?.showSectionDetail(navigationController: self.navigationController, with: viewModel.uri)
+        }
     }
 }
