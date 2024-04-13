@@ -15,7 +15,6 @@
 		251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */; };
 		251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */; };
 		251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */; };
-		251F3EFC2BCA88170048D70E /* SimpleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */; };
 		251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */; };
 		251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */; };
 		251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F032BCA8F370048D70E /* SectionListPresenter.swift */; };
@@ -58,7 +57,6 @@
 		251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractorProtocol.swift; sourceTree = "<group>"; };
 		251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractor.swift; sourceTree = "<group>"; };
 		251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCell.swift; sourceTree = "<group>"; };
-		251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTextCell.xib; sourceTree = "<group>"; };
 		251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCellViewModel.swift; sourceTree = "<group>"; };
 		251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewProtocol.swift; sourceTree = "<group>"; };
 		251F3F032BCA8F370048D70E /* SectionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListPresenter.swift; sourceTree = "<group>"; };
@@ -283,7 +281,6 @@
 			children = (
 				251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */,
 				251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */,
-				251F3EFB2BCA88170048D70E /* SimpleTextCell.xib */,
 			);
 			path = SimpleTextCell;
 			sourceTree = "<group>";
@@ -421,7 +418,6 @@
 			files = (
 				251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */,
 				251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */,
-				251F3EFC2BCA88170048D70E /* SimpleTextCell.xib in Resources */,
 				251F3F272BCAAD360048D70E /* SectionDetail.storyboard in Resources */,
 				251F3ED32BCA7F0A0048D70E /* Base in Resources */,
 			);

@@ -30,10 +30,13 @@ final class SimpleTextCell: UICollectionViewCell {
     }
     
     private func configureUI() {
+        backgroundColor = .gray.withAlphaComponent(0.5)
+        layer.cornerRadius = 5
+        
         nameLabel.text = nil
         nameLabel.font = .systemFont(ofSize: 17.0)
         nameLabel.textColor = .black
-        nameLabel.textAlignment = .left
+        nameLabel.textAlignment = .center
         nameLabel.lineBreakMode = .byTruncatingTail
         nameLabel.numberOfLines = 1
     }

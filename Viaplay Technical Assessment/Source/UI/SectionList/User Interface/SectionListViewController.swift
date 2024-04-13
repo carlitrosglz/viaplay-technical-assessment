@@ -30,7 +30,7 @@ final class SectionListViewController: UIViewController {
     private func configureUI() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: SimpleTextCell.ID, bundle: Bundle(for: SimpleTextCell.self)), forCellWithReuseIdentifier: SimpleTextCell.ID)
+        //collectionView.register(UINib(nibName: SimpleTextCell.ID, bundle: Bundle(for: SimpleTextCell.self)), forCellWithReuseIdentifier: SimpleTextCell.ID)
         collectionView.register(UICollectionViewCell.self,forCellWithReuseIdentifier: String(describing:UICollectionViewCell.self))
         
         titleLabel.text = "Viaplay Section List"
@@ -51,7 +51,7 @@ extension SectionListViewController: SectionListViewProtocol {
     }
 }
 
-extension SectionListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension SectionListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel?.count ?? 0
     }
@@ -67,5 +67,29 @@ extension SectionListViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         router?.showSectionDetail(navigationController: self.navigationController, with: viewModel?[indexPath.row].uri)
+    }
+}
+
+extension SectionListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.frame.width
+        let collectionViewHeight =  collectionView.frame.height
+        
+        let cellWidth = (collectionViewWidth - 30 ) / 2
+        let cellHeight = cellWidth * 0.5
+        
+        return CGSize(width: cellWidth , height: 40)
     }
 }
