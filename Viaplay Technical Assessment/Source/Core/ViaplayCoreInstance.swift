@@ -11,9 +11,11 @@ import UIKit
 final class ViaplayCoreInstance {
     private let router: AppRouterProtocol?
     private let factory: AppViewFactoryProtocol?
+    private let coreDataManager: CoreDataManagerProtocol?
     
     init() {
-        factory = AppViewFactory()
+        coreDataManager = CoreDataManager()
+        factory = AppViewFactory(coreDataManager: coreDataManager)
         router = AppRouter(factory: factory)
     }
     

@@ -12,7 +12,6 @@ final class SectionDetailViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     var interactor: SectionDetailInteractorProtocol?
-    var uri: URL?
     private var viewModel: ViaplaySectionDetailDomain? {
         didSet {
             guard let viewModel else { return }
@@ -45,7 +44,7 @@ final class SectionDetailViewController: UIViewController {
     
     private func getData() {
         Task {
-            await interactor?.getSectionDetail(from: uri)
+            await interactor?.getSectionDetail()
         }
     }
 }

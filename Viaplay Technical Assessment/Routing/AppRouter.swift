@@ -15,8 +15,8 @@ final class AppRouter: AppRouterProtocol {
         self.factory = factory
     }
     
-    func showSectionDetail(navigationController: UINavigationController?, with uri: URL?) {
-        if let vc = factory?.createSectionDetailViewController(with: uri) {
+    func showSectionDetail(navigationController: UINavigationController?, with section: ViaplaySectionDomain?) {
+        if let vc = factory?.createSectionDetailViewController(with: section) {
             navigationController?.pushViewController(vc, animated: true)
         }
     }

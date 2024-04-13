@@ -70,7 +70,7 @@ extension SectionListViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        router?.showSectionDetail(navigationController: self.navigationController, with: viewModel?[indexPath.row].uri)
+        router?.showSectionDetail(navigationController: self.navigationController, with: viewModel?[indexPath.row])
     }
 }
 
@@ -96,7 +96,7 @@ extension SectionListViewController: UICollectionViewDelegateFlowLayout {
 extension SectionListViewController: SimpleTextCellProtocol {
     func onButtonPressed(id: String?) {
         if let viewModel = viewModel?.first(where: { $0.id == id }) {
-            router?.showSectionDetail(navigationController: self.navigationController, with: viewModel.uri)
+            router?.showSectionDetail(navigationController: self.navigationController, with: viewModel)
         }
     }
 }

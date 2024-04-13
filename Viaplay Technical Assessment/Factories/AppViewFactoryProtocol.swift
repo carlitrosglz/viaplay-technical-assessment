@@ -8,7 +8,8 @@
 import UIKit
 
 protocol AppViewFactoryProtocol: AnyObject {
+    var coreDataManager: CoreDataManagerProtocol? { get set }
     func createMainViewController(router: AppRouterProtocol?) -> UIViewController
     func createSectionListViewController(router: AppRouterProtocol?) -> SectionListViewController
-    func createSectionDetailViewController(with uri: URL?) -> SectionDetailViewController
+    func createSectionDetailViewController(with section: ViaplaySectionDomain?) -> SectionDetailViewController
 }

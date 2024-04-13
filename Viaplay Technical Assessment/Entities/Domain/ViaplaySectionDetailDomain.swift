@@ -8,6 +8,7 @@
 import Foundation
 
 struct ViaplaySectionDetailDomain {
+    let id: String?
     let title: String?
     let description: String?
 }

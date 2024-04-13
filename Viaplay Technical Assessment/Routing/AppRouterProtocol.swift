@@ -10,5 +10,5 @@ import UIKit
 
 protocol AppRouterProtocol: AnyObject {
     var factory: AppViewFactoryProtocol? { get set }
-    func showSectionDetail(navigationController: UINavigationController?, with uri: URL?)
+    func showSectionDetail(navigationController: UINavigationController?, with section: ViaplaySectionDomain?)
 }

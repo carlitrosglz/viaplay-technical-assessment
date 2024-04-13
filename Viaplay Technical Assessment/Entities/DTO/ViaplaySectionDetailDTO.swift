@@ -8,10 +8,17 @@
 import Foundation
 
 struct ViaplaySectionDetailDTO: Decodable {
+    let id: String?
     let title: String?
     let description: String?
     
+    enum CodingKeys: String, CodingKey {
+        case id = "sectionId"
+        case title = "title"
+        case description = "description"
+    }
+    
     func toDomain() -> ViaplaySectionDetailDomain {
-        return ViaplaySectionDetailDomain(title: title, description: description)
+        return ViaplaySectionDetailDomain(id: id, title: title, description: description)
     }
 }

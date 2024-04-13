@@ -8,20 +8,37 @@
 import Foundation
 
 final class SectionDetailInteractor: SectionDetailInteractorProtocol {
+    var databaseService: SectionDetailCoreDataProtocol?
     var presenter: SectionDetailPresenterProtocol?
+    var section: ViaplaySectionDomain?
     
-    init(presenter: SectionDetailPresenterProtocol?) {
+    init(presenter: SectionDetailPresenterProtocol?, databaseService: SectionDetailCoreDataProtocol?, section: ViaplaySectionDomain?) {
         self.presenter = presenter
+        self.databaseService = databaseService
+        self.section = section
     }
     
-    func getSectionDetail(from url: URL?) async {
-        guard let url else { return }
+    func getSectionDetail() async {
+        guard let url = section?.uri else { return }
         
         do {
             let section: ViaplaySectionDetailDTO = try await Network.shared.callTo(url: url, method: .GET)
+            saveData(dto: section)
             presenter?.present(item: section.toDomain())
         } catch {
-            print(error)
+            if let data = fetchData() {
+                presenter?.present(item: data.toDomain())
+            }
         }
+    }
+    
+    private func saveData(dto: ViaplaySectionDetailDTO?) {
+        Task {
+            databaseService?.saveSectionDetail(dto: dto)
+        }
+    }
+    
+    private func fetchData() -> ViaplaySectionDetailDTO? {
+        return databaseService?.fetchSectionDetail(with: section?.id)
     }
 }

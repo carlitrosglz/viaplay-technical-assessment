@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SectionDetailInteractorProtocol {
-    func getSectionDetail(from url: URL?) async
+    func getSectionDetail() async
 }
