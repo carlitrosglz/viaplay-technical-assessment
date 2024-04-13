@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EC62BCA7F090048D70E /* AppDelegate.swift */; };
-		251F3ECB2BCA7F090048D70E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3ECA2BCA7F090048D70E /* ViewController.swift */; };
-		251F3ECE2BCA7F090048D70E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ECD2BCA7F090048D70E /* Base */; };
 		251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */; };
 		251F3ED32BCA7F0A0048D70E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ED22BCA7F0A0048D70E /* Base */; };
+		251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */; };
+		251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251F3EF12BCA85310048D70E /* SectionListView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251F3EC32BCA7F080048D70E /* Viaplay Technical Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viaplay Technical Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		251F3EC62BCA7F090048D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		251F3ECA2BCA7F090048D70E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		251F3ECD2BCA7F090048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		251F3ED22BCA7F0A0048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		251F3ED42BCA7F0A0048D70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251F3ED22BCA7F0A0048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
+		251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Viaplay-Info.plist"; sourceTree = "<group>"; };
+		251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewController.swift; sourceTree = "<group>"; };
+		251F3EED2BCA84D90048D70E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		251F3EEF2BCA84DF0048D70E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		251F3EF12BCA85310048D70E /* SectionListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionListView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				251F3EC52BCA7F090048D70E /* Viaplay Technical Assessment */,
 				251F3EC42BCA7F080048D70E /* Products */,
+				251F3EEC2BCA84D50048D70E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +57,135 @@
 		251F3EC52BCA7F090048D70E /* Viaplay Technical Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				251F3EC62BCA7F090048D70E /* AppDelegate.swift */,
-				251F3ECA2BCA7F090048D70E /* ViewController.swift */,
-				251F3ECC2BCA7F090048D70E /* Main.storyboard */,
-				251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */,
-				251F3ED12BCA7F0A0048D70E /* LaunchScreen.storyboard */,
-				251F3ED42BCA7F0A0048D70E /* Info.plist */,
+				251F3EDE2BCA830D0048D70E /* Source */,
+				251F3EDD2BCA83060048D70E /* Entities */,
+				251F3EDC2BCA82FB0048D70E /* Services */,
+				251F3EE62BCA84060048D70E /* Static Resources */,
+				251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */,
 			);
 			path = "Viaplay Technical Assessment";
+			sourceTree = "<group>";
+		};
+		251F3EDC2BCA82FB0048D70E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		251F3EDD2BCA83060048D70E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE82BCA84710048D70E /* DTO */,
+				251F3EE92BCA84760048D70E /* Domain */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		251F3EDE2BCA830D0048D70E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE72BCA84670048D70E /* Core */,
+				251F3EDF2BCA83280048D70E /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		251F3EDF2BCA83280048D70E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE22BCA83780048D70E /* SplashScreen */,
+				251F3EE02BCA83300048D70E /* SectionList */,
+				251F3EE12BCA83430048D70E /* SectionDetail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		251F3EE02BCA83300048D70E /* SectionList */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE52BCA83F50048D70E /* Use Cases */,
+				251F3EE42BCA83EA0048D70E /* Adapters */,
+				251F3EE32BCA839B0048D70E /* User Interface */,
+			);
+			path = SectionList;
+			sourceTree = "<group>";
+		};
+		251F3EE12BCA83430048D70E /* SectionDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SectionDetail;
+			sourceTree = "<group>";
+		};
+		251F3EE22BCA83780048D70E /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				251F3ED12BCA7F0A0048D70E /* SplashScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		251F3EE32BCA839B0048D70E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */,
+				251F3EF12BCA85310048D70E /* SectionListView.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		251F3EE42BCA83EA0048D70E /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		251F3EE52BCA83F50048D70E /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		251F3EE62BCA84060048D70E /* Static Resources */ = {
+			isa = PBXGroup;
+			children = (
+				251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */,
+			);
+			path = "Static Resources";
+			sourceTree = "<group>";
+		};
+		251F3EE72BCA84670048D70E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EC62BCA7F090048D70E /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		251F3EE82BCA84710048D70E /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		251F3EE92BCA84760048D70E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		251F3EEC2BCA84D50048D70E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EEF2BCA84DF0048D70E /* Foundation.framework */,
+				251F3EED2BCA84D90048D70E /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */,
+				251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */,
 				251F3ED32BCA7F0A0048D70E /* Base in Resources */,
-				251F3ECE2BCA7F090048D70E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251F3ECB2BCA7F090048D70E /* ViewController.swift in Sources */,
+				251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */,
 				251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,20 +267,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		251F3ECC2BCA7F090048D70E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				251F3ECD2BCA7F090048D70E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		251F3ED12BCA7F0A0048D70E /* LaunchScreen.storyboard */ = {
+		251F3ED12BCA7F0A0048D70E /* SplashScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				251F3ED22BCA7F0A0048D70E /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = SplashScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,11 +406,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Viaplay-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SectionListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -320,11 +436,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Viaplay-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SectionListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

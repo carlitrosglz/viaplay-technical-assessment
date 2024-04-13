@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self))
+        let storyboard = UIStoryboard(name: "SectionListView", bundle: Bundle(for: SectionListViewController.self))
         let root = storyboard.instantiateInitialViewController()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
