@@ -13,6 +13,8 @@ final class SectionListViewController: UIViewController {
     
     var router: AppRouterProtocol?
     var interactor: SectionListInteractorProtocol?
+    
+    private let itemsPerRow = 2.0
     private var viewModel: [ViaplaySectionDomain]? {
         didSet {
             DispatchQueue.main.async {
@@ -30,7 +32,6 @@ final class SectionListViewController: UIViewController {
     private func configureUI() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        //collectionView.register(UINib(nibName: SimpleTextCell.ID, bundle: Bundle(for: SimpleTextCell.self)), forCellWithReuseIdentifier: SimpleTextCell.ID)
         collectionView.register(UICollectionViewCell.self,forCellWithReuseIdentifier: String(describing:UICollectionViewCell.self))
         
         titleLabel.text = "Viaplay Section List"
@@ -84,12 +85,7 @@ extension SectionListViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewWidth = collectionView.frame.width
-        let collectionViewHeight =  collectionView.frame.height
-        
-        let cellWidth = (collectionViewWidth - 30 ) / 2
-        let cellHeight = cellWidth * 0.5
-        
+        let cellWidth = (collectionView.frame.width - 30 ) / 2        
         return CGSize(width: cellWidth , height: 40)
     }
 }
