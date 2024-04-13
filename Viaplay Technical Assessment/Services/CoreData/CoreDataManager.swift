@@ -53,9 +53,16 @@ final class CoreDataManager: CoreDataManagerProtocol {
 
 extension CoreDataManager {
     func saveSections(dto: [ViaplaySectionDTO]?) {
+        let existingData = fetchSections()
+        let dataToInsert = dto?.filter { dto in
+            !(existingData?.contains { model in
+                model.id == dto.id
+            } ?? false)
+        }
+        
         let managedContext = persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: Entities.Tables.VIAPLAY_SECTION, in: managedContext)!
-        dto?.forEach { section in
+        dataToInsert?.forEach { section in
             let object = NSManagedObject(entity: entity, insertInto: managedContext)
             object.setValue(section.id, forKey: Entities.Columns.Generic.ID)
             object.setValue(section.title, forKey: Entities.Columns.ViaplaySection.TITLE)
@@ -96,6 +103,10 @@ extension CoreDataManager {
     }
     
     func saveSectionDetail(dto: ViaplaySectionDetailDTO?) {
+        if let existingData = fetchSectionDetail(with: dto?.id) {
+            return
+        }
+        
         let managedContext = persistentContainer.viewContext
         
         let entity = NSEntityDescription.entity(forEntityName: Entities.Tables.VIAPLAY_SECTION_DETAIL, in: managedContext)!
