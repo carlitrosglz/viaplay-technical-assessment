@@ -51,6 +51,7 @@ final class CoreDataManager: CoreDataManagerProtocol {
     }
 }
 
+// TODO: Update queries to be done
 extension CoreDataManager {
     func saveSections(dto: [ViaplaySectionDTO]?) {
         let existingData = fetchSections()
