@@ -10,16 +10,16 @@ import Foundation
 final class Network {
     static let shared = Network()
     
-    func callTo<JSON>(url: URL, method: String) async throws -> JSON where JSON: Decodable {
+    func callTo<JSON>(url: URL, method: HttpMethod) async throws -> JSON where JSON: Decodable {
         do {
-            let (data, _) = try await getData(from: url, httpMethod: method)
+            let (data, _) = try await getData(from: url, httpMethod: method.rawValue)
             do {
                 return try JSONDecoder().decode(JSON.self, from: data)
             } catch {
-                throw fatalError()
+                throw NetworkError.jsonParsingFailed
             }
         } catch {
-            throw fatalError()
+            throw NetworkError.generalError
         }
     }
 
@@ -34,8 +34,7 @@ final class Network {
 
         guard let url = URL(string: urlStr)
         else {
-//            throw MyMangasError.netInvalidParameter
-            throw fatalError()
+            throw NetworkError.invalidURL
         }
         
         return try await callTo(url: url, method: endpoint.method)
@@ -53,15 +52,12 @@ final class Network {
         let (data, response) = try await URLSession.shared.data(for: request)
         guard let response = response as? HTTPURLResponse
         else {
-//            throw MyMangasError.netNoHTTP
-            throw fatalError()
+            throw NetworkError.invalidResponseStatus
         }
 
         guard response.statusCode == 200
         else {
-//            let error = try? JSONDecoder().decode(UserEndpointResponse.self, from: data)
-//            throw MyMangasError.netBadStatus(response.statusCode, error?.reason)
-            throw fatalError()
+            throw NetworkError.invalidResponseStatus
         }
 
         return (data, response)

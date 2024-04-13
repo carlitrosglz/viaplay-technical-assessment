@@ -18,7 +18,7 @@ final class SectionDetailInteractor: SectionDetailInteractorProtocol {
         guard let url else { return }
         
         do {
-            let section: ViaplaySectionDetailDTO = try await Network.shared.callTo(url: url, method: "GET")
+            let section: ViaplaySectionDetailDTO = try await Network.shared.callTo(url: url, method: .GET)
             presenter?.present(item: section.toDomain())
         } catch {
             print(error)

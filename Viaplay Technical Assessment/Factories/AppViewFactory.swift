@@ -18,10 +18,7 @@ final class AppViewFactory: AppViewFactoryProtocol {
     }
     
     func createMainViewController(router: AppRouterProtocol?) -> UIViewController {
-        let root = createSectionListViewController(router: router)
-        let nav = UINavigationController(rootViewController: root)
-        return nav
-        //return createSectionListViewController(router: router)
+        return UINavigationController(rootViewController: createSectionListViewController(router: router))
     }
     
     func createSectionListViewController(router: AppRouterProtocol?) -> SectionListViewController {

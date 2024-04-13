@@ -9,10 +9,9 @@ import Foundation
 
 struct Endpoint: Equatable {
     let path: String
-    let method: String
+    let method: HttpMethod
 
-    private init(path: String,
-                 method: String = "GET") {
+    private init(path: String, method: HttpMethod = .GET) {
         self.path = path
         self.method = method
     }
