@@ -16,9 +16,8 @@ final class SectionDetailViewController: UIViewController {
         didSet {
             guard let viewModel else { return }
             DispatchQueue.main.async {
-                if let title = viewModel.title {
-                    self.titleLabel.text = title
-                }
+                self.title = viewModel.viewTitle
+                self.titleLabel.text = viewModel.title ?? "N/A"
                 self.descriptionTextView.text = viewModel.description ?? ""
             }
         }

@@ -24,10 +24,10 @@ final class SectionDetailInteractor: SectionDetailInteractorProtocol {
         do {
             let section: ViaplaySectionDetailDTO = try await Network.shared.callTo(url: url, method: .GET)
             saveData(dto: section)
-            presenter?.present(item: section.toDomain())
+            presenter?.present(item: section.toDomain(with: self.section?.name))
         } catch {
             if let data = fetchData() {
-                presenter?.present(item: data.toDomain())
+                presenter?.present(item: data.toDomain(with: self.section?.name))
             }
         }
     }

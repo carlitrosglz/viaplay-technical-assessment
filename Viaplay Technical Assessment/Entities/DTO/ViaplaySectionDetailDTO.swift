@@ -18,7 +18,7 @@ struct ViaplaySectionDetailDTO: Decodable {
         case description = "description"
     }
     
-    func toDomain() -> ViaplaySectionDetailDomain {
-        return ViaplaySectionDetailDomain(id: id, title: title, description: description)
+    func toDomain(with viewTitle: String? = nil) -> ViaplaySectionDetailDomain {
+        return ViaplaySectionDetailDomain(id: id, viewTitle: viewTitle, title: title, description: description)
     }
 }
