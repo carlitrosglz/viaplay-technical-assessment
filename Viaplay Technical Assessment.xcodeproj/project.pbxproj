@@ -134,10 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				251F3EDE2BCA830D0048D70E /* Source */,
-				251F3EDD2BCA83060048D70E /* Entities */,
-				251F3F002BCA8DE00048D70E /* Factories */,
-				251F3EDC2BCA82FB0048D70E /* Services */,
-				251F3EFF2BCA8DC90048D70E /* Routing */,
 				251F3EE62BCA84060048D70E /* Static Resources */,
 			);
 			path = "Viaplay Technical Assessment";
@@ -166,6 +162,10 @@
 			children = (
 				251F3EE72BCA84670048D70E /* Core */,
 				25628D9D2BCAC6BC0006C079 /* Extensions */,
+				251F3EDD2BCA83060048D70E /* Entities */,
+				251F3F002BCA8DE00048D70E /* Factories */,
+				251F3EDC2BCA82FB0048D70E /* Services */,
+				251F3EFF2BCA8DC90048D70E /* Routing */,
 				251F3EDF2BCA83280048D70E /* UI */,
 			);
 			path = Source;
