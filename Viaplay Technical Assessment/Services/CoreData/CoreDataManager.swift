@@ -130,15 +130,16 @@ extension CoreDataManager {
         do {
             let result = try managedContext.fetch(fetchRequest)
             if let result = result as? [NSManagedObject] {
-                return result.map {
-                    ViaplaySectionDetailDTO(
+                return result.first(where: {
+                    let objectId = $0.value(forKey: Entities.Columns.Generic.ID) as? String
+                    return objectId == id
+                }).map {
+                    return ViaplaySectionDetailDTO(
                         id: $0.value(forKey: Entities.Columns.Generic.ID) as? String,
                         title: $0.value(forKey: Entities.Columns.ViaplaySectionDetail.TITLE) as? String,
                         description: $0.value(forKey: Entities.Columns.ViaplaySectionDetail.DESCRIPTION) as? String
                     )
-                }.first(where: {
-                    $0.id == id
-                })
+                }
             } else {
                 return nil
             }
