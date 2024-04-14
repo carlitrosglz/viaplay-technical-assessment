@@ -8,22 +8,98 @@
 
 /* Begin PBXBuildFile section */
 		251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EC62BCA7F090048D70E /* AppDelegate.swift */; };
-		251F3EC92BCA7F090048D70E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EC82BCA7F090048D70E /* SceneDelegate.swift */; };
-		251F3ECB2BCA7F090048D70E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3ECA2BCA7F090048D70E /* ViewController.swift */; };
-		251F3ECE2BCA7F090048D70E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ECD2BCA7F090048D70E /* Base */; };
 		251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */; };
 		251F3ED32BCA7F0A0048D70E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251F3ED22BCA7F0A0048D70E /* Base */; };
+		251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */; };
+		251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251F3EF12BCA85310048D70E /* SectionListView.storyboard */; };
+		251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */; };
+		251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */; };
+		251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */; };
+		251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */; };
+		251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */; };
+		251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F032BCA8F370048D70E /* SectionListPresenter.swift */; };
+		251F3F062BCA8F400048D70E /* SectionListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */; };
+		251F3F082BCA900F0048D70E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F072BCA900F0048D70E /* AppRouter.swift */; };
+		251F3F0A2BCA90220048D70E /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F092BCA90220048D70E /* AppRouterProtocol.swift */; };
+		251F3F0C2BCA90620048D70E /* AppViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0B2BCA90620048D70E /* AppViewFactory.swift */; };
+		251F3F0E2BCA90840048D70E /* ViaplaySectionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */; };
+		251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */; };
+		251F3F122BCA93340048D70E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F112BCA93340048D70E /* Network.swift */; };
+		251F3F142BCA93630048D70E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F132BCA93630048D70E /* Endpoint.swift */; };
+		251F3F162BCA94480048D70E /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F152BCA94480048D70E /* APIConfiguration.swift */; };
+		251F3F182BCA97D50048D70E /* RootPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F172BCA97D50048D70E /* RootPageDTO.swift */; };
+		251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */; };
+		251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */; };
+		251F3F1E2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */; };
+		251F3F202BCAA8800048D70E /* ViaplaySectionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */; };
+		251F3F252BCAAD0F0048D70E /* SectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */; };
+		251F3F272BCAAD360048D70E /* SectionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251F3F262BCAAD360048D70E /* SectionDetail.storyboard */; };
+		251F3F292BCAAE390048D70E /* SectionDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */; };
+		251F3F2B2BCAAEF70048D70E /* SectionDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */; };
+		251F3F2D2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */; };
+		251F3F2F2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */; };
+		251F3F312BCAAF110048D70E /* SectionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */; };
+		25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */; };
+		25628DA32BCAD0820006C079 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA22BCAD0820006C079 /* NetworkError.swift */; };
+		25628DA52BCAD1CC0006C079 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA42BCAD1CC0006C079 /* HttpMethod.swift */; };
+		25628DA72BCADC080006C079 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA62BCADC080006C079 /* UIImage+Extension.swift */; };
+		25628DA92BCADCB80006C079 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */; };
+		25628DAC2BCAE34F0006C079 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25628DAA2BCAE34F0006C079 /* Database.xcdatamodeld */; };
+		25628DAE2BCAE4C10006C079 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DAD2BCAE4C10006C079 /* CoreDataManager.swift */; };
+		25628DB02BCAE7380006C079 /* SectionListCoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DAF2BCAE7380006C079 /* SectionListCoreDataProtocol.swift */; };
+		25628DB22BCAE8760006C079 /* CoreDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DB12BCAE8760006C079 /* CoreDataManagerProtocol.swift */; };
+		25628DB42BCAE8A10006C079 /* SectionDetailCoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DB32BCAE8A10006C079 /* SectionDetailCoreDataProtocol.swift */; };
+		25628DB62BCB076E0006C079 /* EntitiesValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25628DB52BCB076E0006C079 /* EntitiesValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251F3EC32BCA7F080048D70E /* Viaplay Technical Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viaplay Technical Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		251F3EC62BCA7F090048D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		251F3EC82BCA7F090048D70E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		251F3ECA2BCA7F090048D70E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		251F3ECD2BCA7F090048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		251F3ED22BCA7F0A0048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		251F3ED42BCA7F0A0048D70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251F3ED22BCA7F0A0048D70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
+		251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Viaplay-Info.plist"; sourceTree = "<group>"; };
+		251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewController.swift; sourceTree = "<group>"; };
+		251F3EED2BCA84D90048D70E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		251F3EEF2BCA84DF0048D70E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		251F3EF12BCA85310048D70E /* SectionListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionListView.storyboard; sourceTree = "<group>"; };
+		251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractorProtocol.swift; sourceTree = "<group>"; };
+		251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListInteractor.swift; sourceTree = "<group>"; };
+		251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCell.swift; sourceTree = "<group>"; };
+		251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCellViewModel.swift; sourceTree = "<group>"; };
+		251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewProtocol.swift; sourceTree = "<group>"; };
+		251F3F032BCA8F370048D70E /* SectionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListPresenter.swift; sourceTree = "<group>"; };
+		251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListPresenterProtocol.swift; sourceTree = "<group>"; };
+		251F3F072BCA900F0048D70E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		251F3F092BCA90220048D70E /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		251F3F0B2BCA90620048D70E /* AppViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactory.swift; sourceTree = "<group>"; };
+		251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDomain.swift; sourceTree = "<group>"; };
+		251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDTO.swift; sourceTree = "<group>"; };
+		251F3F112BCA93340048D70E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		251F3F132BCA93630048D70E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		251F3F152BCA94480048D70E /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		251F3F172BCA97D50048D70E /* RootPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageDTO.swift; sourceTree = "<group>"; };
+		251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplayCoreInstance.swift; sourceTree = "<group>"; };
+		251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactoryProtocol.swift; sourceTree = "<group>"; };
+		251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDetailDomain.swift; sourceTree = "<group>"; };
+		251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaplaySectionDetailDTO.swift; sourceTree = "<group>"; };
+		251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewController.swift; sourceTree = "<group>"; };
+		251F3F262BCAAD360048D70E /* SectionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionDetail.storyboard; sourceTree = "<group>"; };
+		251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailViewProtocol.swift; sourceTree = "<group>"; };
+		251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailInteractor.swift; sourceTree = "<group>"; };
+		251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailPresenter.swift; sourceTree = "<group>"; };
+		25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		25628DA22BCAD0820006C079 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		25628DA42BCAD1CC0006C079 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		25628DA62BCADC080006C079 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		25628DAB2BCAE34F0006C079 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		25628DAD2BCAE4C10006C079 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		25628DAF2BCAE7380006C079 /* SectionListCoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListCoreDataProtocol.swift; sourceTree = "<group>"; };
+		25628DB12BCAE8760006C079 /* CoreDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerProtocol.swift; sourceTree = "<group>"; };
+		25628DB32BCAE8A10006C079 /* SectionDetailCoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailCoreDataProtocol.swift; sourceTree = "<group>"; };
+		25628DB52BCB076E0006C079 /* EntitiesValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +118,7 @@
 			children = (
 				251F3EC52BCA7F090048D70E /* Viaplay Technical Assessment */,
 				251F3EC42BCA7F080048D70E /* Products */,
+				251F3EEC2BCA84D50048D70E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +133,253 @@
 		251F3EC52BCA7F090048D70E /* Viaplay Technical Assessment */ = {
 			isa = PBXGroup;
 			children = (
-				251F3EC62BCA7F090048D70E /* AppDelegate.swift */,
-				251F3EC82BCA7F090048D70E /* SceneDelegate.swift */,
-				251F3ECA2BCA7F090048D70E /* ViewController.swift */,
-				251F3ECC2BCA7F090048D70E /* Main.storyboard */,
-				251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */,
-				251F3ED12BCA7F0A0048D70E /* LaunchScreen.storyboard */,
-				251F3ED42BCA7F0A0048D70E /* Info.plist */,
+				251F3EDE2BCA830D0048D70E /* Source */,
+				251F3EE62BCA84060048D70E /* Static Resources */,
 			);
 			path = "Viaplay Technical Assessment";
+			sourceTree = "<group>";
+		};
+		251F3EDC2BCA82FB0048D70E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25628DA12BCAD06B0006C079 /* CoreData */,
+				25628DA02BCAD0610006C079 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		251F3EDD2BCA83060048D70E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE82BCA84710048D70E /* DTO */,
+				251F3EE92BCA84760048D70E /* Domain */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		251F3EDE2BCA830D0048D70E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE72BCA84670048D70E /* Core */,
+				25628D9D2BCAC6BC0006C079 /* Extensions */,
+				251F3EDD2BCA83060048D70E /* Entities */,
+				251F3F002BCA8DE00048D70E /* Factories */,
+				251F3EDC2BCA82FB0048D70E /* Services */,
+				251F3EFF2BCA8DC90048D70E /* Routing */,
+				251F3EDF2BCA83280048D70E /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		251F3EDF2BCA83280048D70E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EF72BCA87BF0048D70E /* Cells */,
+				251F3EE22BCA83780048D70E /* SplashScreen */,
+				251F3EE02BCA83300048D70E /* SectionList */,
+				251F3EE12BCA83430048D70E /* SectionDetail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		251F3EE02BCA83300048D70E /* SectionList */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EE52BCA83F50048D70E /* Use Cases */,
+				251F3EE42BCA83EA0048D70E /* Adapters */,
+				251F3EE32BCA839B0048D70E /* User Interface */,
+			);
+			path = SectionList;
+			sourceTree = "<group>";
+		};
+		251F3EE12BCA83430048D70E /* SectionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F212BCAACEF0048D70E /* Use Cases */,
+				251F3F222BCAACF70048D70E /* Adapters */,
+				251F3F232BCAACFB0048D70E /* User Interface */,
+			);
+			path = SectionDetail;
+			sourceTree = "<group>";
+		};
+		251F3EE22BCA83780048D70E /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				251F3ED12BCA7F0A0048D70E /* SplashScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		251F3EE32BCA839B0048D70E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F012BCA8F170048D70E /* SectionListViewProtocol.swift */,
+				251F3EEA2BCA848E0048D70E /* SectionListViewController.swift */,
+				251F3EF12BCA85310048D70E /* SectionListView.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		251F3EE42BCA83EA0048D70E /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F052BCA8F400048D70E /* SectionListPresenterProtocol.swift */,
+				251F3F032BCA8F370048D70E /* SectionListPresenter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		251F3EE52BCA83F50048D70E /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EF32BCA86E10048D70E /* SectionListInteractorProtocol.swift */,
+				25628DAF2BCAE7380006C079 /* SectionListCoreDataProtocol.swift */,
+				251F3EF52BCA86FC0048D70E /* SectionListInteractor.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		251F3EE62BCA84060048D70E /* Static Resources */ = {
+			isa = PBXGroup;
+			children = (
+				251F3ECF2BCA7F0A0048D70E /* Assets.xcassets */,
+				251F3ED42BCA7F0A0048D70E /* Viaplay-Info.plist */,
+			);
+			path = "Static Resources";
+			sourceTree = "<group>";
+		};
+		251F3EE72BCA84670048D70E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EC62BCA7F090048D70E /* AppDelegate.swift */,
+				251F3F192BCA9A1A0048D70E /* ViaplayCoreInstance.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		251F3EE82BCA84710048D70E /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F172BCA97D50048D70E /* RootPageDTO.swift */,
+				251F3F0F2BCA90F00048D70E /* ViaplaySectionDTO.swift */,
+				251F3F1F2BCAA8800048D70E /* ViaplaySectionDetailDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		251F3EE92BCA84760048D70E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F0D2BCA90840048D70E /* ViaplaySectionDomain.swift */,
+				251F3F1D2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		251F3EEC2BCA84D50048D70E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EEF2BCA84DF0048D70E /* Foundation.framework */,
+				251F3EED2BCA84D90048D70E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		251F3EF72BCA87BF0048D70E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EF82BCA87C70048D70E /* SimpleTextCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		251F3EF82BCA87C70048D70E /* SimpleTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				251F3EFD2BCA8A980048D70E /* SimpleTextCellViewModel.swift */,
+				251F3EF92BCA87FC0048D70E /* SimpleTextCell.swift */,
+			);
+			path = SimpleTextCell;
+			sourceTree = "<group>";
+		};
+		251F3EFF2BCA8DC90048D70E /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F092BCA90220048D70E /* AppRouterProtocol.swift */,
+				251F3F072BCA900F0048D70E /* AppRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		251F3F002BCA8DE00048D70E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F0B2BCA90620048D70E /* AppViewFactory.swift */,
+				251F3F1B2BCA9B250048D70E /* AppViewFactoryProtocol.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		251F3F212BCAACEF0048D70E /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				25628DB32BCAE8A10006C079 /* SectionDetailCoreDataProtocol.swift */,
+				251F3F2C2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift */,
+				251F3F2A2BCAAEF70048D70E /* SectionDetailInteractor.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		251F3F222BCAACF70048D70E /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F2E2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift */,
+				251F3F302BCAAF110048D70E /* SectionDetailPresenter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		251F3F232BCAACFB0048D70E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F282BCAAE390048D70E /* SectionDetailViewProtocol.swift */,
+				251F3F242BCAAD0F0048D70E /* SectionDetailViewController.swift */,
+				251F3F262BCAAD360048D70E /* SectionDetail.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		25628D9D2BCAC6BC0006C079 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25628D9E2BCAC6DB0006C079 /* String+Extensions.swift */,
+				25628DA62BCADC080006C079 /* UIImage+Extension.swift */,
+				25628DA82BCADCB80006C079 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25628DA02BCAD0610006C079 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				251F3F112BCA93340048D70E /* Network.swift */,
+				251F3F132BCA93630048D70E /* Endpoint.swift */,
+				251F3F152BCA94480048D70E /* APIConfiguration.swift */,
+				25628DA22BCAD0820006C079 /* NetworkError.swift */,
+				25628DA42BCAD1CC0006C079 /* HttpMethod.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		25628DA12BCAD06B0006C079 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				25628DAA2BCAE34F0006C079 /* Database.xcdatamodeld */,
+				25628DB12BCAE8760006C079 /* CoreDataManagerProtocol.swift */,
+				25628DAD2BCAE4C10006C079 /* CoreDataManager.swift */,
+				25628DB52BCB076E0006C079 /* EntitiesValues.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				251F3ED02BCA7F0A0048D70E /* Assets.xcassets in Resources */,
+				251F3EF22BCA85310048D70E /* SectionListView.storyboard in Resources */,
+				251F3F272BCAAD360048D70E /* SectionDetail.storyboard in Resources */,
 				251F3ED32BCA7F0A0048D70E /* Base in Resources */,
-				251F3ECE2BCA7F090048D70E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +454,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251F3ECB2BCA7F090048D70E /* ViewController.swift in Sources */,
+				251F3F182BCA97D50048D70E /* RootPageDTO.swift in Sources */,
+				251F3F022BCA8F170048D70E /* SectionListViewProtocol.swift in Sources */,
+				251F3EF42BCA86E10048D70E /* SectionListInteractorProtocol.swift in Sources */,
+				251F3F162BCA94480048D70E /* APIConfiguration.swift in Sources */,
+				251F3F2F2BCAAF0C0048D70E /* SectionDetailPresenterProtocol.swift in Sources */,
+				251F3F082BCA900F0048D70E /* AppRouter.swift in Sources */,
+				251F3F202BCAA8800048D70E /* ViaplaySectionDetailDTO.swift in Sources */,
+				251F3F1C2BCA9B250048D70E /* AppViewFactoryProtocol.swift in Sources */,
+				251F3F292BCAAE390048D70E /* SectionDetailViewProtocol.swift in Sources */,
+				25628DA32BCAD0820006C079 /* NetworkError.swift in Sources */,
+				251F3F0E2BCA90840048D70E /* ViaplaySectionDomain.swift in Sources */,
+				251F3F1A2BCA9A1A0048D70E /* ViaplayCoreInstance.swift in Sources */,
+				251F3F312BCAAF110048D70E /* SectionDetailPresenter.swift in Sources */,
+				251F3F062BCA8F400048D70E /* SectionListPresenterProtocol.swift in Sources */,
+				251F3F122BCA93340048D70E /* Network.swift in Sources */,
+				251F3EEB2BCA848E0048D70E /* SectionListViewController.swift in Sources */,
+				251F3EF62BCA86FC0048D70E /* SectionListInteractor.swift in Sources */,
 				251F3EC72BCA7F090048D70E /* AppDelegate.swift in Sources */,
-				251F3EC92BCA7F090048D70E /* SceneDelegate.swift in Sources */,
+				251F3F102BCA90F00048D70E /* ViaplaySectionDTO.swift in Sources */,
+				25628DA92BCADCB80006C079 /* UIColor+Extensions.swift in Sources */,
+				251F3F142BCA93630048D70E /* Endpoint.swift in Sources */,
+				251F3F252BCAAD0F0048D70E /* SectionDetailViewController.swift in Sources */,
+				25628DB62BCB076E0006C079 /* EntitiesValues.swift in Sources */,
+				25628DAC2BCAE34F0006C079 /* Database.xcdatamodeld in Sources */,
+				251F3EFA2BCA87FC0048D70E /* SimpleTextCell.swift in Sources */,
+				251F3F042BCA8F370048D70E /* SectionListPresenter.swift in Sources */,
+				251F3F0A2BCA90220048D70E /* AppRouterProtocol.swift in Sources */,
+				251F3F1E2BCAA85A0048D70E /* ViaplaySectionDetailDomain.swift in Sources */,
+				25628D9F2BCAC6DB0006C079 /* String+Extensions.swift in Sources */,
+				251F3F2B2BCAAEF70048D70E /* SectionDetailInteractor.swift in Sources */,
+				25628DB22BCAE8760006C079 /* CoreDataManagerProtocol.swift in Sources */,
+				25628DA72BCADC080006C079 /* UIImage+Extension.swift in Sources */,
+				251F3F2D2BCAAEFE0048D70E /* SectionDetailInteractorProtocol.swift in Sources */,
+				251F3EFE2BCA8A980048D70E /* SimpleTextCellViewModel.swift in Sources */,
+				25628DA52BCAD1CC0006C079 /* HttpMethod.swift in Sources */,
+				25628DAE2BCAE4C10006C079 /* CoreDataManager.swift in Sources */,
+				25628DB02BCAE7380006C079 /* SectionListCoreDataProtocol.swift in Sources */,
+				251F3F0C2BCA90620048D70E /* AppViewFactory.swift in Sources */,
+				25628DB42BCAE8A10006C079 /* SectionDetailCoreDataProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		251F3ECC2BCA7F090048D70E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				251F3ECD2BCA7F090048D70E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		251F3ED12BCA7F0A0048D70E /* LaunchScreen.storyboard */ = {
+		251F3ED12BCA7F0A0048D70E /* SplashScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				251F3ED22BCA7F0A0048D70E /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = SplashScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,18 +638,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Static Resources/Viaplay-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SectionListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlosgonzalez.viaplaytechnicalassessment.Viaplay-Technical-Assessment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosgonzalez.viaplaytechnicalassessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,18 +668,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38Z5KQPX8D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Viaplay Technical Assessment/Info.plist";
+				INFOPLIST_FILE = "Viaplay Technical Assessment/Static Resources/Viaplay-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Viaplay Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SectionListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.carlosgonzalez.viaplaytechnicalassessment.Viaplay-Technical-Assessment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosgonzalez.viaplaytechnicalassessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,6 +711,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25628DAA2BCAE34F0006C079 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25628DAB2BCAE34F0006C079 /* Database.xcdatamodel */,
+			);
+			currentVersion = 25628DAB2BCAE34F0006C079 /* Database.xcdatamodel */;
+			name = Database.xcdatamodeld;
+			path = "/Users/Carlos_Gonzalez2/Documents/projects/Viaplay Technical Assessment/Viaplay Technical Assessment/Services/CoreData/Database.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 251F3EBB2BCA7F080048D70E /* Project object */;
 }
